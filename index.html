@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Assistant</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <script defer src="ajax-util.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  
+  <header>
+    <h2>Home assistant</h2>
+    <div class="measure-location">
+      <span class="location" id="location-id">--</span> /
+      <span class="date" id="date-id">--</span>
+    </div>
+  </header>
+  <div class="main">
+    <button>TEST Click</button>
+    <div class="container">
+      
+        <div class="row wraper">
+          <div class="tile temperature">
+            <div class="title">
+              <h6>inside</h6>
+            </div>
+            <div class="count">22</div>
+            <div class="unit">&#176;</div>
+          </div>
+          <div class="tile temperature">
+            <div class="title">
+              <h6>outside</h6>
+            </div>
+            <div class="count">15</div>
+            <div class="unit">&#176;</div>
+           </div>
+      </div>
+      
+      <div class="row">
+        <div class="tile humidity">
+          <div class="title">
+              <h6>humidity</h6>
+            </div>
+          <div class="count">35</div>
+          <div class="unit">%</div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
