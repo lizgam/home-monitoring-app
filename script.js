@@ -9,7 +9,7 @@ function renderParameters() {
 renderParameters();
 
 document.addEventListener("DOMContentLoaded", () => {
-    $ajaxUtils.sendGetRequest("GET", "https://reqres.in/api/users/2")
+    $ajaxUtils.sendHttpAjaxRequest("GET", "https://reqres.in/api/users/2")
     .then(resp => {
         let message = resp.data.first_name;
         document.getElementById("location-id").textContent = message;
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.querySelector("button").addEventListener("click", () => {
-    $ajaxUtils.sendGetRequest("POST", "https://reqres.in/api/register", {
+    $ajaxUtils.sendHttpAjaxRequest("POST", "https://reqres.in/api/register", {
         email: "eve.holt@reqres.in",
         password: "pistol"
     })

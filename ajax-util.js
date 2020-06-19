@@ -7,7 +7,7 @@
     }
 
 
-    ajaxUtils.sendGetRequest = (method, url, data) => {
+    ajaxUtils.sendHttpAjaxRequest = (method, url, data) => {
         const promise = new Promise((resolve, reject) => {
             let xhr = getRequestObject();
             xhr.open(method, url);
